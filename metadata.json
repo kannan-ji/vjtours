@@ -1,0 +1,6 @@
+{
+  "name": "VJ Tours and Travels",
+  "description": "Reliable Kerala cabs and tour operator based in Perumbavoor, 15 minutes from Cochin Airport. Airport transfers, outstation trips, and custom Kerala holiday packages.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
