@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import { Phone } from 'lucide-react';
 import { WhatsAppIcon } from './WhatsAppIcon';
+import heroImage from '@/public/assets/aistudio/hero_vjtours-1.jpg';
 import {
   PRIMARY_PHONE_NUMBER,
   DISPLAY_PHONE_NUMBER,
@@ -19,7 +20,7 @@ export function Hero() {
       {/* Full-bleed background photo: Munnar tea hills road landscape */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/aistudio/hero_vjtours-1.jpg"
+          src={heroImage}
           alt="Kerala VJ Tours and Travels"
           fill
           priority
