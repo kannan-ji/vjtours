@@ -19,8 +19,8 @@ export function Hero() {
       {/* Full-bleed background photo: Munnar tea hills road landscape */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/assets/aistudio/hero_vjtours-1_3d3038b9.jpg"
-          alt="Munnar Tea Hills Road Kerala VJ Tours"
+          src="/assets/aistudio/hero_vjtours-1.jpg"
+          alt="Kerala VJ Tours and Travels"
           fill
           priority
           sizes="100vw"

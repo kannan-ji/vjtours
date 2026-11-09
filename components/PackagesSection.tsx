@@ -25,7 +25,8 @@ const PACKAGES: PackageItem[] = [
     name: 'Munnar Tea Valley & Cochin Heritage',
     duration: '3N / 4D',
     route: 'Cochin → Munnar → Cochin',
-    image: '/assets/aistudio/navi-lotbFfrhm5Q-unsplash_9ddef83b.jpg',
+    image:
+      'https://images.unsplash.com/photo-1593693397690-362cb9666fc2?auto=format&fit=crop&w=800&q=80',
     inclusions: [
       'Private AC chauffeur vehicle for entire tour',
       'Munnar tea plantation & Mattupetty sightseeing',
