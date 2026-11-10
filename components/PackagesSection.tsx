@@ -87,12 +87,16 @@ export function PackagesSection() {
                       className="object-cover"
                       referrerPolicy="no-referrer"
                     />
-                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/70 via-slate-950/20 to-transparent" />
-                    <div className="absolute bottom-3 left-4 right-4 flex items-center justify-between gap-2">
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-950/75 via-slate-950/20 to-transparent" />
+                    {/* Top Left: Duration Pill */}
+                    <div className="absolute top-3 left-4">
                       <span className="px-3 py-1 rounded-full bg-white/95 backdrop-blur-sm text-emerald-800 text-xs font-bold shadow-xs">
                         {pkg.duration}
                       </span>
-                      <span className="text-xs font-semibold text-white uppercase tracking-wide drop-shadow-sm truncate">
+                    </div>
+                    {/* Bottom Left: Route */}
+                    <div className="absolute bottom-3 left-4 right-4">
+                      <span className="text-xs font-semibold text-white uppercase tracking-wide drop-shadow-sm truncate block">
                         {pkg.route}
                       </span>
                     </div>
@@ -103,22 +107,13 @@ export function PackagesSection() {
                     <h3 className="font-display font-bold text-xl sm:text-2xl text-slate-900 mb-4">
                       {pkg.name}
                     </h3>
-                    <div className="space-y-3 mb-6">
+                    <div className="space-y-3">
                       {pkg.inclusions.map((item, idx) => (
                         <div key={idx} className="flex items-start gap-2.5 text-xs sm:text-sm text-slate-700">
                           <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />
                           <span>{item}</span>
                         </div>
                       ))}
-                    </div>
-
-                    <div className="pt-4 border-t border-slate-200/80 flex items-center justify-between">
-                      <span className="text-xs font-semibold text-slate-500 uppercase tracking-wide">
-                        Rates on request (seasonal)
-                      </span>
-                      <span className="text-xs font-medium text-emerald-700">
-                        Customizable Itinerary
-                      </span>
                     </div>
                   </div>
                 </div>

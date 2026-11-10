@@ -1,9 +1,12 @@
 'use client';
 
 import React from 'react';
-import Image from 'next/image';
+import Image, { type StaticImageData } from 'next/image';
 import { Users, Luggage } from 'lucide-react';
 import { WhatsAppIcon } from './WhatsAppIcon';
+import wagonrImage from '@/public/assets/aistudio/vehicle-wagonr.jpg';
+import dzireImage from '@/public/assets/aistudio/vehicle-dzire.jpg';
+import ertigaImage from '@/public/assets/aistudio/vehicle-ertiga.jpg';
 import {
   PRIMARY_PHONE_NUMBER,
   formatWhatsAppUrl,
@@ -13,7 +16,7 @@ import {
 interface VehicleItem {
   id: string;
   name: string;
-  image: string;
+  image: string | StaticImageData;
   passengers: string;
   luggage: string;
   idealFor: string;
@@ -22,34 +25,31 @@ interface VehicleItem {
 
 const VEHICLES: VehicleItem[] = [
   {
-    id: 'sedan',
-    name: 'Swift Dzire / Etios',
-    image:
-      'https://images.unsplash.com/photo-1590362891991-f776e747a588?auto=format&fit=crop&w=800&q=80',
+    id: 'wagonr',
+    name: 'WagonR',
+    image: wagonrImage,
     passengers: '3-4 passengers',
-    luggage: '2 large suitcases',
-    idealFor: 'Couples & solo travelers',
-    features: ['AC', 'Music system', 'Charging points'],
+    luggage: '2 small bags',
+    idealFor: 'Couples & Solo Travelers',
+    features: ['AC', 'Compact Hatchback', 'Easy Ghats Transit'],
   },
   {
-    id: 'suv',
-    name: 'Innova Crysta / Ertiga',
-    image:
-      'https://images.unsplash.com/photo-1541899481282-d53bffe3c35d?auto=format&fit=crop&w=800&q=80',
+    id: 'dzire',
+    name: 'Dzire',
+    image: dzireImage,
+    passengers: '4 passengers',
+    luggage: '2 large + 1 small suitcase',
+    idealFor: 'Small Families & Couples',
+    features: ['AC', 'Comfortable Sedan', 'Generous Boot Space'],
+  },
+  {
+    id: 'ertiga',
+    name: 'Ertiga',
+    image: ertigaImage,
     passengers: '5-6 passengers',
-    luggage: '4 large suitcases',
-    idealFor: 'Families & small groups',
-    features: ['AC', 'Music system', 'Charging points'],
-  },
-  {
-    id: 'tempo',
-    name: 'Tempo Traveller',
-    image:
-      'https://images.unsplash.com/photo-1570125909232-eb263c188f7e?auto=format&fit=crop&w=800&q=80',
-    passengers: '10-25 passengers',
-    luggage: '10-18 suitcases',
-    idealFor: 'Large families & corporate',
-    features: ['AC', 'Music system', 'Charging points'],
+    luggage: '3-4 large suitcases',
+    idealFor: 'Families & Groups',
+    features: ['Dual AC', 'Spacious 7-Seater', 'Reclining Comfort Seats'],
   },
 ];
 
@@ -68,7 +68,7 @@ export function VehiclesSection() {
             Our Vehicles
           </h2>
           <p className="text-base text-slate-600">
-            Our own vehicles, driven by local chauffeurs.
+            Our own clean vehicles, driven by experienced local drivers.
           </p>
         </div>
 

@@ -2,12 +2,10 @@
 
 import React from 'react';
 import Image from 'next/image';
-import { Phone } from 'lucide-react';
 import { WhatsAppIcon } from './WhatsAppIcon';
 import heroImage from '@/public/assets/aistudio/hero_vjtours-1.jpg';
 import {
   PRIMARY_PHONE_NUMBER,
-  DISPLAY_PHONE_NUMBER,
   formatWhatsAppUrl,
   buildHeroInquiryMessage,
 } from '@/lib/whatsapp';
@@ -36,7 +34,7 @@ export function Hero() {
         <div className="max-w-2xl text-left flex flex-col items-start">
           {/* Headline matching attached HTML */}
           <h1 className="font-display text-4xl sm:text-5xl lg:text-6xl text-white tracking-tight leading-[1.12] mb-6 font-normal drop-shadow-sm">
-            Your Trusted Keralam Travel &amp; <span className="italic text-emerald-300">Holiday Partner</span>
+            Your Trusted Keralam <span className="italic text-emerald-300">Travel &amp; Holiday Partner</span>
           </h1>
 
           {/* Subheading matching attached HTML */}
@@ -57,11 +55,10 @@ export function Hero() {
             </a>
 
             <a
-              href={`tel:+${PRIMARY_PHONE_NUMBER}`}
-              className="inline-flex items-center justify-center sm:justify-start gap-2 text-white hover:text-emerald-200 text-sm font-semibold tracking-wide transition-colors py-2 group underline-offset-4 hover:underline"
+              href="#contact-us"
+              className="inline-flex items-center justify-center gap-2 h-12 px-6 rounded-xl border border-white/30 bg-white/10 hover:bg-white/20 text-white font-semibold text-sm tracking-wide backdrop-blur-xs transition-all shadow-md focus:outline-none focus:ring-4 focus:ring-white/20"
             >
-              <Phone className="w-4 h-4 text-emerald-300 group-hover:scale-110 transition-transform" />
-              <span>Call {DISPLAY_PHONE_NUMBER}</span>
+              <span>Connect with Us</span>
             </a>
           </div>
         </div>

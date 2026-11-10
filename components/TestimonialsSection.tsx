@@ -17,7 +17,7 @@ const REVIEWS: ReviewItem[] = [
     city: 'Bengaluru',
     tripType: 'Family Vacation',
     quote:
-      'Seamless airport pickup and our chauffeur made our Munnar trip completely stress-free with local food spots and smooth driving.',
+      'The driver was waiting at Kochi airport right on time. Calm and safe driving on the Munnar hill roads, and he pointed out great tea spots and viewpoints along the way.',
   },
   {
     id: 'review-2',
@@ -25,15 +25,15 @@ const REVIEWS: ReviewItem[] = [
     city: 'Mumbai',
     tripType: 'Honeymoon & Leisure',
     quote:
-      'Clean Innova Crysta, transparent communication over WhatsApp, and zero hidden charges. Highly recommended for Kerala trips.',
+      'Booked an Ertiga for 5 days. Spotless car, very chill driver, and the price quoted on WhatsApp was exact with no extra surprise costs at the end.',
   },
   {
     id: 'review-3',
     name: 'George K.',
     city: 'Chennai',
-    tripType: 'Group Tour',
+    tripType: 'Family Trip',
     quote:
-      'Booked a Tempo Traveller for our 14-member family gathering. On-time dispatch from Perumbavoor, very courteous driver.',
+      'Traveled with my elderly parents and kids. Our driver was genuinely kind, patient with stops, and made sure everyone was comfortable throughout.',
   },
 ];
 
